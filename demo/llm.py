@@ -11,10 +11,7 @@ device = "cpu"
 # Currently https://huggingface.co/TheBloke/Stable-Platypus2-13B-GGUF/blob/main/stable-platypus2-13b.Q4_K_M.gguf
 MODEL_NAME = "model.gguf"
 
-# puddlejumper
 PROMPT_TEMPLATE = """
-Below is an instruction that describes a task. Write a response that appropriately completes the request.
-
 ### Instruction:
 {user_input}
 
@@ -134,18 +131,14 @@ def continue_with_user_input(bot_history, user_input, bot: Llama):
 
 EXAMPLES = [
     ['What is the past tense of "I am"?'],
-    ["Compute the product of 3 and 7?"],
-    [
-        "Is 11 a prime number? If not provide its factorization into numbers not equal to either 1 or 11."
-    ],
-    ["What is an impression?"],
+    ["What is Creative Approval?"],
     ["""Answer the following question based on the information provided in the context block.
 
 Question:
-What is an impression?
+What is the Creative Approval?
 
 Context:
-In digital advertising, an impression is counted each time an ad is served to a user’s web-enabled device, whether that’s on a desktop PC, tablet, phone, or smart TV. Ad servers track and count impressions according to parameters set and agreed by the advertiser/publisher, and ad inventory is usually priced and sold by impressions (see CPM). An impression only refers to the number of times an ad is served – the likelihood that the user actually viewed the ad is covered by the viewability metric."""]
+Creative Approval is a smartclip tool that allows publishers to approve and reject the advertisements that run on their inventory, giving them more granular control to protect their brand. Creative Approval is especially important for sensitive brands that have strict rules they must follow when it comes to what can be shown on their sites."""]
 ]
 
 
