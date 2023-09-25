@@ -12,6 +12,8 @@ device = "cpu"
 MODEL_NAME = "model.gguf"
 
 PROMPT_TEMPLATE = """
+Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
 ### Instruction:
 {user_input}
 
